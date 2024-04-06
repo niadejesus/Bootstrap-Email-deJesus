@@ -11,39 +11,60 @@
 </head>
 <body>
   <div class="email-container">
-    <h2>Email Template</h2>
-    <div class="row">
-      <div class="col-md-6"> <!--Columns were used in order to separate different sections for the email template-->
-        <button class="compose-btn">Compose</button>
-      </div>
-      <div class="col-md-6">
-        <button class="reply-btn">Reply</button> <!--Buttons are used in order to fulfill the requirement for two unique Bootstrap components, also for responsiveness-->
-      </div>
+    <div class="header">
+    <h1>Email Template</h1>
+    <p>Stay in touch with others here!</p>
     </div>
+    <input type="text" class="form-control search-bar" placeholder="Search...&#129488;"> <!-- Search bar -->
     <div class="row">
-      <div class="col-md-4"> <!--Another usage of the columns because of Bootstrap-->
+      <div class="col-lg-2"> <!--Columns were used in order to separate different sections for the email template-->
         <h3>Folders</h3>
         <ul class="folders">
-          <li><a href="#">Inbox  </a></li>
-          <li><a href="#">Sent</a></li>
-          <li><a href="#">Drafts</a></li>
-          <li><a href="#">Trash</a></li> <!--Referenced the lessons from before that specified how to make something clickable even if it's not directing to anywhere -->
+          <li><a href="#">&#128229;Inbox  <strong class="blink">New Message!</strong> </a></li>
+          <li><a href="#">&#128228;Sent</a></li>
+          <li><a href="#">&#128390;Drafts</a></li>
+          <li><a href="#">&#128465;Trash</a></li> <!--Referenced the lessons from before that specified how to make something clickable even if it's not directing to anywhere -->
         </ul>
       </div>
-      <div class="col-md-8">
-        <h3>Search</h3>
-        <input type="text" class="form-control search-bar" placeholder="Search...">
-        <hr>
-        <h3>Message</h3>
-        <textarea class="email-textarea" placeholder="Respond by typing into this box..."></textarea>
-        <hr>
-        <h3>Email Received</h3>
+      <div class="col-md-4">
+        <h3> Received emails </h3>
+        <div class="misc-emails">
+          <div class="miscemails-settings">
+            <strong>From:</strong> John Doe<br>
+            <strong>Subject:</strong> Lorem Ipsum<br>
+            <strong>Date:</strong> March 1, 2024<br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="miscemails-settings">
+            <strong>From:</strong> Jane Smith<br>
+            <strong>Subject:</strong> Lorem Ipsum<br>
+            <strong>Date:</strong> March 2, 2024<br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="miscemails-settings">
+            <strong>From:</strong> Anri d.<br>
+            <strong>Subject:</strong> Important Email<br>
+            <strong>Date:</strong> February 23, 2024<br>
+            <p>This is a very important...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-auto">
+        <h3>&#128231;Email Received&#128231;</h3>
         <div class="received-email">
           <strong>From:</strong> Anri D.<br>
-          <strong>Subject:</strong> Important Date to Remember<br>
+          <strong>Subject:</strong> Important Email <br>
           <strong>Date:</strong> February 23, 2024<br> <!--Used the strong tags so that there was more emphasis on the text here-->
           <p>This is a very important date for you!</p>
-          <p>This is when you got to see your partner face to face for the first time! &#128151;</p>
+          <p> Sent this email as a reminder! &#128151;</p>
+        </div>
+          <!-- This is specifically for the textbox -->
+        <div class="col-sm-auto">
+          <label for="textbox"> Respond to the email here:</label>
+          <input type="text" id="textbox" name="textbox">
+        </div>
+        <button class="compose-btn">Compose&#9997;</button>
+        <button class="reply-btn">CReply&#9997;</button>
         </div>
       </div>
     </div>
